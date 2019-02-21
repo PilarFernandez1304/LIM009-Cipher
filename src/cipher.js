@@ -1,6 +1,7 @@
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
+  encode: (offset,descReceta) => {
+    console.log(descReceta.split(''));
+
   },
   decode: () => {
     /* Acá va tu código */

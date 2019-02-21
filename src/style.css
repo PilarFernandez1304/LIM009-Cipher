@@ -26,6 +26,10 @@ html{
     align-items: center;
 
 }
+.conteiner-receta-medica{
+    width: 100%;
+    height: 780px;
+}
 .conteiner-options{
     width: 80%;
     height: 700px;
