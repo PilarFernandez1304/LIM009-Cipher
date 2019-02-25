@@ -12,5 +12,6 @@ function CapturarCifer () {
 
 
 }
+cipher.decode(parseInt(1),'efmzaqjmbs')
 
 //const textReceta= descReceta.toUpperCase();
