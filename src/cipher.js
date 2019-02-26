@@ -8,8 +8,9 @@ window.cipher = {
       const letteriter=upperCasedReceta[i];
       let posicionAlpha = alfa.indexOf(letteriter);
       let posActual=(posicionAlpha+offset)%26;
-      const newletra=alfa[posActual];
-      console.log(newletra);
+      let newletra=alfa[posActual];
+     
+      document.write(newletra);
       
       if(letteriter===' '){
         neword+=letteriter;
