@@ -35,7 +35,10 @@ const face3=document.getElementById('face3');
     function validar(){
         const usuario=document.getElementById('usuario');
         const password=document.getElementById('password');
-        if()
+        if(usuario ==="doctor" && password === 123456){
+            console.log('contraseña  correcta');
+        }
+    
 
         
 
