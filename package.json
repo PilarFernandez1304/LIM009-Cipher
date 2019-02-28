@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "eslint": "^5.9.0",
     "htmlhint": "^0.10.1",
     "mocha": "^5.1.1",
     "nyc": "^13.1.0",
     "opener": "^1.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1"
   }
 }
