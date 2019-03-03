@@ -91,7 +91,7 @@ Posteriormente el paciente puede acercarse a cualquiera de las Farmacias autoriz
 el medico que lo atendio.
 
 Las Farmacias podran acceder a la receta y con previa verificacion se desencriptara la receta y se podra vender el producto al paciente.
-
+![login](ims-readme/login.png)
 la experiencia para los usuario(paciente) es otorgarle mayor  comodidad y seguridad a la hora de adquirir un producto, y que este no sea 
 un producto de dudosa calidad.En cuanto a la interfaz se busca que sea super intuitiva, sin que el Medico o el Farmaceutico tenga necesidad
 de hacer malabares para acceder a la plataforma.
@@ -100,11 +100,12 @@ de hacer malabares para acceder a la plataforma.
 
 existen dos principales usuarios: 
 * El Medico.- que se encargara de recetar al paciente y proporcionar la receta medica encriptada mediante un codigo.
+![receta](img-readme/recetaMedica.png)
 
 * el Farmaceutico.- que podra acceder a la receta medica unicamente si este tiene un usuario y password autorizados 
 con anterioridad y podra descifrar la receta y porteriormente vender el producto que le fue recetado al paciente.
 
-
+![Farmacia](img-readme/Farmacia.png)
 - Cuáles son los objetivos de estos usuarios en relación con tu producto.
 
 Principalmente creo que uno de los objetivos es darle una buena atencion a los pacientes dandole seguridad y garantias de adquierir un buen
