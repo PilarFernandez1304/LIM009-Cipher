@@ -94,37 +94,53 @@ html{
     width: 180px;
     height: 110px;
 }
-.form-recipe{
+.back-recipe{
     width: 100%;
     height: 780px;
     background-color: #0D7066;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.back-recipe-farmacia{
+    width: 100%;
+    height: 780px;
+    background-color:#C62B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .conteiner-banner-form{
     width: 100%;
-    height: 140px;
-    margin-top: 1rem;
+    height: 120px;
+    margin: 1rem 0;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .conteiner-receta-medica{
     width: 100%;
     height: 620px;
-    padding: 3rem;
+    padding: 1rem 4rem;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .form-input{
-    width: 100%;
+    width: 90%;
     height: 600px;
 }
 .cont-offset{
-    width:100%;
+    width:90%;
     height: 40px;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     display: flex;
     justify-content:flex-end; 
     align-items: flex-end;
@@ -138,19 +154,33 @@ html{
 
 
 }
+.info-pers{
+    width: 60%;
+    height:20px;
+}
 .info-doctor{
     display: flex;
     justify-content: space-between;
     margin:  1.5rem 0;
 }
 .conteiner-receta{
-    width: 90%;
-    height: 150px;
+    width: 80%;
+    height: 250px;
     margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center,
+    
+
 }
-.btn-receta{
-    width: 150px;
-    height: 35px;
+.cont-rece{
+    width: 100%;
+    padding:0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .form-user{
@@ -158,18 +188,12 @@ html{
     height: 200px;
     margin-bottom: 5rem;
 }
-.img-user{
-    width: 200px;
-    height: 200px;
-    margin: 0;
-    
-}
 h2{
     margin: 0.5rem;
     font-size: 1.8rem;
 }
 p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .datos-user{
     width: 250px;
@@ -191,4 +215,21 @@ p{
     justify-content: center;
     align-items: center;
 
+}
+.conteiner-textCipher{
+    width: 60%;
+    height: 30px;
+    margin: 0;
+}
+.cont-num{
+    width: 20%;
+    height: 30px;
+    
+}
+.sec-btn{
+    width: 80%;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

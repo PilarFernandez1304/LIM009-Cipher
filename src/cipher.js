@@ -1,36 +1,55 @@
 window.cipher = {
   encode: (offset,descReceta) => {
     let upperCasedReceta = descReceta.toUpperCase();
-    let neword='';
-    let alfa='abcdefghijklmnopqrstuvwxyz'.toLocaleUpperCase();
+    
+    let concat='';
+    let alfa='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for(let i=0 ; i<upperCasedReceta.length; i++){
-      const letteriter=upperCasedReceta[i];
+      const letteriter=upperCasedReceta[i];      
       let posicionAlpha = alfa.indexOf(letteriter);
       let posActual=(posicionAlpha+offset)%26;
-      let newletra=alfa[posActual];
-     
-      document.write(newletra);
-      
-      if(letteriter===' '){
+      let newletra=alfa[posActual];    
+
+     /* if(letteriter ===' '){
         neword+=letteriter;
-        //console.log(neword);
+        
         continue;
-      }
+      }*/
+     concat+=newletra;
+    
+      
+     
     }
-    return neword;
+    
+     return concat ;         
+    
   },
-  decode: (offset,descReceta) => {
+
+ decode: (offset,descReceta) => {
     let textCifrado=descReceta.toUpperCase();
     let neword='';
-    let alfa='abcdefghijklmnopqrstuvwxyz'.toLocaleUpperCase();
+    
+    let concat='';
+    let alfa='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for (let i = 0; i < textCifrado.length; i++) {
       const textIter = textCifrado[i];
       let posicAlpha = alfa.indexOf(textIter);
       let positNew=(posicAlpha-offset)%26;
+      
       const newletra=alfa[positNew];
-      document.write(newletra);      
+      if(positNew === -1){
+       
+        neword+=positNew;
+        
+      continue ;
+      }
+      
+      
+     concat+=newletra; 
+    
+     
   }
-
-  return neword; 
+  return concat; 
+  
   }
 }

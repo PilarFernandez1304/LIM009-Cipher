@@ -12,13 +12,13 @@
     "test": "npm run test-node && npm run test-browser"
   },
   "dependencies": {
-    "chai": "^4.1.2",
     "htmlhint": "^0.10.1",
-    "mocha": "^5.1.1",
     "nyc": "^13.1.0",
     "opener": "^1.4.3"
   },
   "devDependencies": {
-    "eslint": "^5.14.1"
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "mocha": "^5.2.0"
   }
 }

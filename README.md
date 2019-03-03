@@ -61,7 +61,7 @@ En el README.md,
 
 
 
-				Medical Clinic Cipher
+				##Medical Clinic Cipher
 
 -cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de  experiencia y de interfaz.
 
@@ -80,12 +80,13 @@ En base a este gran problema y la necesidad que el usuario sienta confianza a la
 en donde no le vendan medicamentos vencidos o de dudosa procedencia y que el establecimiento tenga las garantias necesarias para expedir 
 los farmacos es que se creo Medical Clinic Cipher.
 
+
 Para se mas exactos, Medical Clinic cipher es una pagina web que es accedida solamente por Medicos de clinicas, Hospitales y Centros de 
 salud autorizados y asi mismo por Farmacias que tengan todos los controles y garantias otorgadas por entidades encargadas de fiscalizar.
 Se puede acceder a Medical Clinic Cipher unicamente con un usuario y una contraseña, en donde se mostrar un formulario vacio de una receta
 medica, que debe ser llenado pr el medico que atiende al paciente y al terminar cifrar el contenido de la receta, enviarlo y entregar al 
 paciente un codigo.
-
+![Bienvenido](img-readme/Sin titulo.png)
 Posteriormente el paciente puede acercarse a cualquiera de las Farmacias autorizadas, unicamente entregando un codigo que le proporciono
 el medico que lo atendio.
 

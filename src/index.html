@@ -1,180 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="conteiner-gen" id="face1">
-      <div class="conteiner-Welcome">
-          <div class="conteiner-banner"> 
-            <img src="img/Logo1.png" alt="" class="logo">
-          </div>
-          <div class="conteiner-options">
-            <div class="area-options">
-              <input type="button" value="Consultorio" class="boton">   
-            </div>
-            <div class=" area-options">
-              <input type="button" value="Farmacia"  class="boton ">
-            </div>
-          </div>
 
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="conteiner-gen" id="face1">
+    <div class="conteiner-Welcome">
+      <div class="conteiner-banner">
+        <img src="img/Logo1.png" alt="" class="logo">
       </div>
-    </div>
-    <div class="conteiner-gen" id="face2">
-    <div class="conteiner-logeo">
-        <div class="conteiner-login">
-          <div class="conteiner-banner-login"> 
-            <img src="img/Logo1.png" alt="" class="logo-login">
-          </div>
-            <figure class="img-user-cont">
-              <img src="img/usuario.png" alt="" class="img-user">
-            </figure>
-            <div>
-              <h2>LOGIN</h2>
-            </div>
-            <form action="" class="form-user">
-              <p> <strong> Usuario</strong></p>
-              <input type="text" name="Nombre" id="usuario" value="" class="datos-user"/>
-              <p><strong> Password</strong></p>
-              <input type="password" id="password" name="contraseña" value="" class="datos-user"/>
-              <br>
-              <input type="button" id='btn-enter' class="btn-enter" value="Ingresar">
-            </form>
+      <div class="conteiner-options">
+        <div class="area-options">
+          <input type="button" value="Consultorio" class="boton">
         </div>
+        <div class=" area-options">
+          <input type="button" value="Farmacia" class="boton ">
+        </div>
+      </div>
+
     </div>
   </div>
-    <div id="face4" class="conteiner-gen">
-      <div class="form-recipe">
-          <div class="conteiner-banner-form"> 
-            <img src="img/Logo1.png" alt="" class="logo-login">
-          </div>
-          <div class="conteiner-receta-medica">
-            <h2>RECETA MEDICA</h2>
-           <form action="" class="form-input">
-             <section class="cont-offset">
-             <p>Offset </p>
-             <input type="text" name="Offset" id="offset">
-             <label>Fecha </label>
-             <input type="text" name="date-day" value="">de
-             <select name="date-month" id="">
-               <option value="1">Enero</option>
-               <option value="2">Febrero</option>
-               <option value="3">Marzo</option>
-               <option value="4">Abril</option>
-               <option value="5">Mayo</option>
-               <option value="6">Junio</option>
-               <option value="7">Julio</option>
-               <option value="8">Agosto</option>
-               <option value="9">Septiembre</option>
-               <option value="10">Octubre</option>
-               <option value="11">Noviembre</option>
-               <option value="12">Diciembre</option>
-             </select>de
-             <input type="text" name="date-year">
-            
-            </section>
-            <p>Nombre Paciente</p>
-            <input type="text" name="Nombre-Paciente">
-            <section class="info-paciente">
-            
-            <p>Edad</p>
-            <input type="text" name="Age">
-            <p>DNI</p>
-            <input type="text" name="DNI">
-            <p>Peso</p>
-            <input type="text" name="Peso">       
+  <div class="conteiner-gen" id="face2">
+    <div class="conteiner-logeo">
+      <div class="conteiner-login">
+        <div class="conteiner-banner-login">
+          <img src="img/Logo1.png" alt="" class="logo-login">
+        </div>
+        <figure class="img-user-cont">
+          <img src="img/usuario.png" alt="" class="img-user">
+        </figure>
+        <div>
+          <h2>LOGIN</h2>
+        </div>
+        <form action="" class="form-user">
+          <p> <strong> Usuario</strong></p>
+          <input type="text" name="Nombre" id="usuario" value="" class="datos-user" />
+          <p><strong> Password</strong></p>
+          <input type="password" id="password" name="contraseña" value="" class="datos-user" />
+          <br>
+          <input type="button" id='btn-enter' class="btn-enter" value="Ingresar">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="face3" class="conteiner-gen">
+    <div class="back-recipe">
+      <div class="conteiner-banner-form">
+        <img src="img/Logo1.png" alt="" class="logo-login">
+      </div>
+      <div >
+        <h2>RECETA MEDICA</h2>
+      </div>
+      <div class="conteiner-receta-medica">
+        <form action="#" id="formulario"  class="form-input">
+          <section class="cont-offset">
+            <p>OFFSET: </p>
+            <input type="text" name="Offset" id="offset">
+            <p>FECHA: </p>
+            <input type="date" name="" id="fecha">
+          </section>
+          <section class="info-paciente">
+            <p>NOMBRE PACIENTE:</p>
+            <input type="text" id="Name" class="info-pers">
+            <br/>
+            <p>EDAD:</p>
+            <input type="text" id="Age">
             </section>
             <section class="info-doctor">
-            <p>Nombre Medico</p>
-            <input type="text" name="Medico">
-            <p>Especialidad</p>
-            <input type="text" name="especialidad">  
+              <p>MEDICO:</p>
+              <input type="text" class="info-pers" id="nameMedico">              
+              <p>ESPECIALIDAD:</p>
+              <input type="text" id="especialidad">
             </section>
-            <p>Recipe</p>
-            <input type="text" id="descReceta" class="conteiner-textCipher">
-            <input type="text" id="descripCipher" class="conteiner-textCipher">
+          <section class="conteiner-receta">
+            <h4><strong> PRESCRIPCION MEDICA</strong></h4>
+            <br/>
+            <div class="cont-rece">
+              <p class="conteiner-textCipher"><strong> Medicamentos</strong></p>
+              <p class="cont-num"> <strong> Suscripcion</strong></p>
+              <p class="cont-num"><strong> Indicacion</strong></p>
+
+            </div>
+            <div class="cont-rece">
+            <input type="text" id="descReceta1" class="conteiner-textCipher">
+            <input type="text" id="cantidad1" class="cont-num">
+            <input type="text" id="indicacion1" class="cont-num">
+            </div> 
             
-        
-            <input type="button" id="btnCapcifrar" value="Cifrar" name="Cipher">
-            <input type="button" value="Descifrar" name="Cipher">
-            <input type="button" value="Enviar" name="Send">
+            <div class="cont-rece">
+            <p type="text" id="descReceta2" class="conteiner-textCipher"></p>
+            <p id="cantidad2" class="cont-num"></p>
+            <p type="text" id="indicacion2" class="cont-num"></p>
+            </div>
             
-            <input type="reset" value="Limpiar" name="Clean">
-           </form>
-
-          </div>
-
-
+            <div class="cont-rece">
+            <input type="text" id="descReceta3" class="conteiner-textCipher">
+            <input type="text" id="cantidad3" class="cont-num">
+            <input type="text" id="indicacion3" class="cont-num">
+            </div>
+            <div class="cont-rece">
+            <p type="text" id="descReceta4" class="conteiner-textCipher">
+            <p type="text" id="cantidad4" class="cont-num"></p>
+            <p type="text" id="indicacion4" class="cont-num"></p>
+           </div>
+          </section>
+          <section class="sec-btn"> 
+          <input type="button" id="btnCapcifrar" value="Cifrar" name="Cipher" class="btn-enter">
+          <input type="button" id="enviar" value="Enviar" name="Send" class="btn-enter">
+          <input type="reset" value="Limpiar" name="Clean" class="btn-enter">
+          </section>
+      </form>
       </div>
-
     </div>
-    <div id="face3" class="conteiner-gen">
-      <div class="form-recipe">
-          <div class="conteiner-banner-form"> 
-            <img src="img/Logo1.png" alt="" class="logo-login">
-          </div>
-          <div class="conteiner-receta-medica">
-            <h2>RECETA MEDICA</h2>
-           <form action="" class="form-input">
-             <section class="cont-offset">
-             <p>Offset </p>
-             <input type="text" name="Offset" id="offset">
-             <label>Fecha </label>
-             <input type="text" name="date-day" value="">de
-             <select name="date-month" id="">
-               <option value="1">Enero</option>
-               <option value="2">Febrero</option>
-               <option value="3">Marzo</option>
-               <option value="4">Abril</option>
-               <option value="5">Mayo</option>
-               <option value="6">Junio</option>
-               <option value="7">Julio</option>
-               <option value="8">Agosto</option>
-               <option value="9">Septiembre</option>
-               <option value="10">Octubre</option>
-               <option value="11">Noviembre</option>
-               <option value="12">Diciembre</option>
-             </select>de
-             <input type="text" name="date-year">
-            
+  </div>
+  
+  <div id="face4" class="conteiner-gen">
+      <div class="back-recipe-farmacia">
+        <div class="conteiner-banner-form">
+          <img src="img/Logo1.png" alt="" class="logo-login">
+        </div>
+        <div >
+          <h2>RECETA MEDICA</h2>
+        </div>
+        <div class="conteiner-receta-medica">
+          <form action="" class="form-input">
+            <section class="cont-offset">
+              <p><strong>OFFSET:</strong>  </p>
+              <input type="text" name="Offset" id="offset">
+              <p><strong> FECHA:</strong> </p>
+              <input type="date" name="" id="">
             </section>
-            <p>Nombre Paciente</p>
-            <input type="text" name="Nombre-Paciente">
             <section class="info-paciente">
-            
-            <p>Edad</p>
-            <input type="text" name="Age">
-            <p>DNI</p>
-            <input type="text" name="DNI">
-            <p>Peso</p>
-            <input type="text" name="Peso">       
+              <p><strong>NOMBRE PACIENTE:</strong> </p>
+              <input type="text" class="info-pers">
+              <br/>
+              <p><strong> EDAD:</strong></p>
+              <input type="text">
+              </section>
+              <section class="info-doctor">
+                <p><strong> MEDICO: </strong></p>
+                <input type="text" class="info-pers">              
+                <p><strong> ESPECIALIDAD:</strong></p>
+                <input type="text">
+              </section>
+            <section class="conteiner-receta">
+              <h4><strong> PRESCRIPCION MEDICA</strong></h4>
+              <br/>
+              <div class="cont-rece">
+                <p class="conteiner-textCipher"><strong> Medicamentos</strong></p>
+                <p class="cont-num"> <strong> Suscripcion</strong></p>
+                <p class="cont-num"><strong> Indicacion</strong></p>
+  
+              </div>
+              <div class="cont-rece">
+              <input type="text" id="descReceta" class="conteiner-textCipher">
+              <input type="text" id="descripCipher" class="cont-num">
+              <input type="text" id="descripCipher" class="cont-num">
+              </div> 
+              
+              <div class="cont-rece">
+              <input type="text" id="descReceta" class="conteiner-textCipher">
+              <input type="text" id="descripCipher" class="cont-num">
+              <input type="text" id="descripCipher" class="cont-num">
+              </div>
+              
+              <div class="cont-rece">
+              <input type="text" id="descReceta" class="conteiner-textCipher">
+              <input type="text" id="descripCipher" class="cont-num">
+              <input type="text" id="descripCipher" class="cont-num">
+              </div>
+              <div class="cont-rece">
+              <input type="text" id="descReceta" class="conteiner-textCipher">
+              <input type="text" id="descripCipher" class="cont-num">
+              <input type="text" id="descripCipher" class="cont-num">
+             </div>
             </section>
-            <section class="info-doctor">
-            <p>Nombre Medico</p>
-            <input type="text" name="Medico">
-            <p>Especialidad</p>
-            <input type="text" name="especialidad">  
+            <section class="sec-btn"> 
+            <input type="button" id="btnCapcifrar" value="Descifrar" name="Cipher" class="btn-enter">
+            <input type="button"  value="Cerrar" name="Send" class="btn-enter">
+            <input type="reset" value="Limpiar" name="Clean" class="btn-enter">
             </section>
-            <p>Recipe</p>
-            <input type="text" id="descReceta" >
-            <input type="text" id="descripCipher" class="conteiner-textCipher">
-        
-            <input type="button" id="btnCapcifrar" value="Cifrar" name="Cipher">
-            <input type="button" value="Descifrar" name="Cipher">
-            <input type="button" value="Enviar" name="Send">
-            
-            <input type="reset" value="Limpiar" name="Clean">
-           </form>
-
-          </div>
-
-
+        </form>
+        </div>
       </div>
-
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  
+  
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
