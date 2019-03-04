@@ -3,12 +3,12 @@ const btnCapcifrar=document.getElementById('btnCapcifrar');
 const face1=document.getElementById('face1');
 const face2=document.getElementById('face2');
 const face3=document.getElementById('face3');
-//const face4=document.getElementById('face4');
+const face4=document.getElementById('face4');
 
     face1.style.display='';
     face2.style.display='none';
     face3.style.display='none';
-    //face4.style.display='none';
+    face4.style.display='none';
 
 // EVENTOS 
 
@@ -65,7 +65,7 @@ const face3=document.getElementById('face3');
             face1.style.display='none';
             face2.style.display='';
             face3.style.display='none';
-            //face4.style.display='none';
+            face4.style.display='none';
             
         })   
     }
@@ -81,12 +81,12 @@ const face3=document.getElementById('face3');
         if(usuario =="doctor" && password == 123456 ){
             face2.style.display='none';
             face3.style.display='block';
-           // face4.style.display='none';
+            face4.style.display='none';
         }else if(usuario=='farmaceutico' && password==123){
             alert('correcto');
             face2.style.display='none';
             face3.style.display='none';
-            //face4.style.display='block';
+            face4.style.display='block';
 
         }else{
             alert ('contraseña incorrecta');
@@ -100,17 +100,92 @@ const face3=document.getElementById('face3');
     function CapturarCifer () {
         const descReceta=document.getElementById('descReceta1').value;
         const descReceta3=document.getElementById('descReceta3').value;
+        const descReceta2=document.getElementById('descReceta2');
+        const descReceta4=document.getElementById('descReceta4');
+        descReceta2.style.display='none';
+        descReceta4.style.display='none';
         const offset=document.getElementById('offset').value
         const obtenerCipher=cipher.encode(parseInt(offset),descReceta);
         const cipher2=cipher.encode(parseInt(offset),descReceta3)
-        console.log(obtenerCipher);
         document.getElementById('descReceta2').innerHTML=obtenerCipher;
         document.getElementById('descReceta4').innerHTML= cipher2;
+        descReceta2.style.display='block';
+        descReceta4.style.display='block';
+        const offsetf=document.getElementById('offsetF');
+        offsetf.innerHTML= offset;
+        // captuurando y envio de cifrado a farmacia
+        const text1=document.getElementById('text1');
+        text1.innerHTML=obtenerCipher;
+
+        const text3=document.getElementById('text3');
+        text3.innerHTML=cipher2;    
+    }
+    btnEnviar=document.getElementById('enviar');
+    btnEnviar.addEventListener('click',CapturaMuestra);
+    
+         
+        
+        function CapturaMuestra(){
+        //captura date
+         const fecha=document.getElementById('fecha').value;
+         const datef=document.getElementById('DateF');
+        // captura name
+        const name=document.getElementById('Name').value;
+        const NameP=document.getElementById('nameP');
+        // captura age
+        const age=document.getElementById('Age').value;
+        const edadP=document.getElementById('edadP');
+        // captura Medico
+        const nameMedico=document.getElementById('nameMedico').value;
+        const nameDoc = document.getElementById('nameDoc');
+        // captura Especialidad
+        const especialidad=document.getElementById('especialidad').value;
+        const especi_Doc=document.getElementById('especialidad-Doc');
+        // captura de subscripcion
+        const cantidad1=document.getElementById('cantidad1').value;
+        const txt_subs1=document.getElementById('txt-subs1');
+        
+
+
+        NameP.innerHTML=name;
+        datef.innerHTML=fecha;
+        edadP.innerHTML=age;
+        nameDoc.innerHTML=nameMedico;
+        especi_Doc.innerHTML=especialidad;
+        txt_subs1.txt_subs1.innerHTML=cantidad1;
+        
+
+
+        
+
+        
+
+    // funcion que captura los datos y  los envia al formulario de Farmacia
+  
+    }
+
+    const btnexit=document.getElementById('btn-exit');
+    btnexit.addEventListener('click', exit);
+
+    function exit(){
+        face3.style.display='none';
+        face2.style.display='block';
+    }
+
+    btnDescifrar=document.getElementById('btnDescifrar');
+    btnDescifrar.addEventListener('click',CapturaDescifrado);
+
+    function CapturaDescifrado(){
+        const text2=document.getElementById('text2').value;
+        const text4=document.getElementById('text4').value;
+        const offset2 =document.getElementById('offset').value;
+        const obtenerDescifrado=cipher.decode(parseInt(offset2),text2) ;
+        const obtenerDescifrado2=cipher.decode(parseInt(offset2),text4) ;
+
 
     }
 
 
 
-    console.log(cipher.decode(parseInt(1),'efmzaqjmbs'));
 
 //const textReceta= descReceta.toUpperCase();
