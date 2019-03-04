@@ -120,7 +120,7 @@ const face4=document.getElementById('face4');
         const text3=document.getElementById('text3');
         text3.innerHTML=cipher2;    
     }
-    btnEnviar=document.getElementById('enviar');
+    const btnEnviar=document.getElementById('enviar');
     btnEnviar.addEventListener('click',CapturaMuestra);
     
          
@@ -144,22 +144,12 @@ const face4=document.getElementById('face4');
         // captura de subscripcion
         const cantidad1=document.getElementById('cantidad1').value;
         const txt_subs1=document.getElementById('txt-subs1');
-        
-
-
         NameP.innerHTML=name;
         datef.innerHTML=fecha;
         edadP.innerHTML=age;
         nameDoc.innerHTML=nameMedico;
         especi_Doc.innerHTML=especialidad;
-        txt_subs1.txt_subs1.innerHTML=cantidad1;
-        
-
-
-        
-
-        
-
+        txt_subs1.innerHTML=cantidad1;
     // funcion que captura los datos y  los envia al formulario de Farmacia
   
     }
@@ -172,20 +162,36 @@ const face4=document.getElementById('face4');
         face2.style.display='block';
     }
 
-    btnDescifrar=document.getElementById('btnDescifrar');
+    const btnDescifrar=document.getElementById('btnDescifrar');
     btnDescifrar.addEventListener('click',CapturaDescifrado);
 
     function CapturaDescifrado(){
-        const text2=document.getElementById('text2').value;
-        const text4=document.getElementById('text4').value;
-        const offset2 =document.getElementById('offset').value;
-        const obtenerDescifrado=cipher.decode(parseInt(offset2),text2) ;
-        const obtenerDescifrado2=cipher.decode(parseInt(offset2),text4) ;
 
+        const text2=document.getElementById('text2').value;
+       //const text4=document.getElementById('text4').value;
+       const offset2 =document.getElementById('offset').value;
+       const obtenerDescifrado=cipher.decode(parseInt(offset2),text2) ;
+       // const obtenerDescifrado2=cipher.decode(parseInt(offset2),text4) ;
+        const MostrarDescipher=document.getElementById('MostrarDescipher');
+        MostrarDescipher.innerHTML=obtenerDescifrado;
+       const text1_1=document.getElementById('text1');
+       text1_1.style.display='none';
+        MostrarDescipher.style.display='block';
+
+
+        
+
+
+
+       
+
+    
+        //text1_Mcipher.innerHTML=obtenerDescifrado;     
 
     }
 
 
+    
 
 
 //const textReceta= descReceta.toUpperCase();
