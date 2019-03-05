@@ -25,30 +25,27 @@ window.cipher = {
     
   },
 
- decode: (offsetde,descRecetaDes) => {
-    let textCifrado=descRecetaDes.toUpperCase();
+ decode: (offset,descReceta) => {
+    let textCifrado=descReceta.toUpperCase();
     
     let concat='';
     let alfa='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for (let i = 0; i < textCifrado.length; i++) {
       const textIter = textCifrado[i];
       let posicAlpha = alfa.indexOf(textIter);
-      let positNew=(posicAlpha-offsetde)%26;
+      let positNew=(posicAlpha-offset)%26;
       
       const newletra=alfa[positNew];
-      // if(positNew === -1){
-       
-      //   neword+=positNew;
-        
-      // continue ;
-      // }
+     
       
-      
+     
      concat+=newletra; 
     
      
   }
+  
   return concat; 
+  
   
   }
 }

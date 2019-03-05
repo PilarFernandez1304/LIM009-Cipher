@@ -1,3 +1,5 @@
+
+
 //VARIABLES
 const btnCapcifrar=document.getElementById('btnCapcifrar');
 const face1=document.getElementById('face1');
@@ -83,7 +85,6 @@ const face4=document.getElementById('face4');
             face3.style.display='block';
             face4.style.display='none';
         }else if(usuario=='farmaceutico' && password==123){
-            alert('correcto');
             face2.style.display='none';
             face3.style.display='none';
             face4.style.display='block';
@@ -91,6 +92,7 @@ const face4=document.getElementById('face4');
         }else{
             alert ('contraseña incorrecta');
         }
+        document.getElementById('login-form').reset();
     }
     //FIN VALIDACION
 
@@ -141,16 +143,30 @@ const face4=document.getElementById('face4');
         // captura Especialidad
         const especialidad=document.getElementById('especialidad').value;
         const especi_Doc=document.getElementById('especialidad-Doc');
-        // captura de subscripcion
+        // captura de subscripcion1
         const cantidad1=document.getElementById('cantidad1').value;
         const txt_subs1=document.getElementById('txt-subs1');
+        // captura de indicacion 1
+        const indicacion1=document.getElementById('indicacion1').value;
+        const txtind2=document.getElementById('txtind2');
+        // captura de subscripcion2
+        const cantidad3=document.getElementById('cantidad3').value;
+        const txt_subs4=document.getElementById('txt-subs4');
+        // captura de indicacion 2
+        const indicacion3=document.getElementById('indicacion3').value;
+        const txt_ind4=document.getElementById('txtind4');
+
         NameP.innerHTML=name;
         datef.innerHTML=fecha;
         edadP.innerHTML=age;
         nameDoc.innerHTML=nameMedico;
         especi_Doc.innerHTML=especialidad;
         txt_subs1.innerHTML=cantidad1;
+        txtind2.innerHTML=indicacion1;
+        txt_subs4.innerHTML=cantidad3;
+        txt_ind4.innerHTML=indicacion3;
     // funcion que captura los datos y  los envia al formulario de Farmacia
+        alert('Los Datos se enviaron Correctamente');
   
     }
 
@@ -159,7 +175,7 @@ const face4=document.getElementById('face4');
 
     function exit(){
         face3.style.display='none';
-        face2.style.display='block';
+        face1.style.display='block';
     }
 
     const btnDescifrar=document.getElementById('btnDescifrar');
@@ -168,30 +184,44 @@ const face4=document.getElementById('face4');
     function CapturaDescifrado(){
 
         const text2=document.getElementById('text2').value;
-       //const text4=document.getElementById('text4').value;
+       const text4=document.getElementById('text4').value;
        const offset2 =document.getElementById('offset').value;
        const obtenerDescifrado=cipher.decode(parseInt(offset2),text2) ;
-       // const obtenerDescifrado2=cipher.decode(parseInt(offset2),text4) ;
+       const obtenerDescifrado2=cipher.decode(parseInt(offset2),text4) ;
         const MostrarDescipher=document.getElementById('MostrarDescipher');
         MostrarDescipher.innerHTML=obtenerDescifrado;
        const text1_1=document.getElementById('text1');
        text1_1.style.display='none';
         MostrarDescipher.style.display='block';
+        const MostrarDescipher2=document.getElementById('MostrarDescipher2');
+        MostrarDescipher2.innerHTML=obtenerDescifrado2;
+        const text3_1=document.getElementById('text3');
+        text3_1.style.display='none';
+        MostrarDescipher2.style.display='block';
 
-
-        
-
-
-
-       
-
-    
-        //text1_Mcipher.innerHTML=obtenerDescifrado;     
 
     }
 
+    btn_clean=document.getElementById('clean');
+    btn_clean.addEventListener('click',Limpiar);
 
-    
+    function Limpiar(){
+        
+        document.getElementById('formulario2').reset();
+        document.getElementById('fromulario').reset();
+    }
+
+    const btn_salir=document.getElementById('Salir');
+    btn_salir.addEventListener('click',Salir);
+    function Salir(){
+        face4.style.display='none';
+        face1.style.display='block';
+    }
+
+ 
+
+
+   // cipher.decode(parseInt(),"efmzqjmbs");
 
 
 //const textReceta= descReceta.toUpperCase();

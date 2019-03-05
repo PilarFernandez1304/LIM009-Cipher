@@ -36,7 +36,7 @@
         <div>
           <h2>LOGIN</h2>
         </div>
-        <form action="" class="form-user">
+        <form action="" class="form-user" id="login-form">
           <p> <strong> Usuario</strong></p>
           <input type="text" name="Nombre" id="usuario" value="" class="datos-user" />
           <p><strong> Password</strong></p>
@@ -92,9 +92,9 @@
             </div> 
             
             <div class="cont-rece">
-            <p type="text" id="descReceta2" class="conteiner-textCipher"></p>
+            <p  id="descReceta2" class="conteiner-textCipher"></p>
             <p id="cantidad2" class="cont-num"></p>
-            <p type="text" id="indicacion2" class="cont-num"></p>
+            <p  id="indicacion2" class="cont-num"></p>
             </div>
             
             <div class="cont-rece">
@@ -127,23 +127,24 @@
           <h2>FARMACIA</h2>
         </div>
         <div class="conteiner-receta-medica">
-          <form action="" class="form-input">
+          <form id="formulario2" action="" class="form-input">
             <section class="cont-offset">
               <p><strong>OFFSET:</strong>  </p>
-              <p id="offsetF"> </p>
+                
+                <p id="offsetF" > </p>
               <p><strong> FECHA:</strong> </p>
               <p id="DateF"> </p>
             </section>
             <section class="info-paciente">
               <p><strong>NOMBRE PACIENTE:</strong> </p>
-              <p id="nameP" class="info-pers" > </p>
+              <p id="nameP" class="info-pers border-cont" > </p>
               <br/>
               <p><strong> EDAD:</strong></p>
               <p id="edadP"> </p>
               </section>
               <section class="info-doctor">
                 <p><strong> MEDICO: </strong></p>
-                <p id="nameDoc" class="info-pers">  </p>             
+                <p id="nameDoc" class="info-pers border-cont">  </p>             
                 <p><strong> ESPECIALIDAD:</strong></p>
                 <p id="especialidad-Doc"> </p>
               </section>
@@ -160,31 +161,32 @@
               <p  id="text1" class="conteiner-textCipher"> </p>
               <br/>
               <p id="MostrarDescipher"> </p>
-              <p  id="txt-subs1" class="cont-num"> </p>
+              <p  class="cont-num"> </p>
               <p  id="txtind1" class="cont-num"> </p>
               </div> 
               
               <div class="cont-rece">
-              <input type="text"  id="text2" class="conteiner-textCipher">
-              <input type="text" id="txt-subs2" class="cont-num">
-              <input type="text" id="txtind2" class="cont-num">
+              <input  id="text2" class="conteiner-textCipher">
+              <p id="txt-subs1" class="cont-num "></p>
+              <p  id="txtind2" class="cont-num"></p>
               </div>
               
               <div class="cont-rece">
               <p  id="text3" class="conteiner-textCipher"> </p>
+              <p id="MostrarDescipher2"> </p>
               <p id="txt-subs3" class="cont-num"> </p>
               <p id="txtind3" class="cont-num"> </p>
               </div>
               <div class="cont-rece">
-              <input type="text" id="text4" class="conteiner-textCipher">
-              <input type="text" id="txt-subs4" class="cont-num">
-              <input type="text" id="txtind4" class="cont-num">
+              <input  id="text4" class="conteiner-textCipher">
+              <p  id="txt-subs4" class="cont-num "></p>
+              <p  id="txtind4" class="cont-num "></p>
              </div>
             </section>
             <section class="sec-btn"> 
             <input type="button" id="btnDescifrar" value="Descifrar" name="Cipher" class="btn-enter">
-            <input type="button"  value="Cerrar" name="Send" class="btn-enter">
-            <input type="reset" value="Limpiar" name="Clean" class="btn-enter">
+            <input type="button"  id="Salir" value="Salir" name="Send" class="btn-enter">
+            <input id="clean" type="reset" value="Limpiar" name="Clean" class="btn-enter">
             </section>
         </form>
         </div>

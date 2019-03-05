@@ -195,6 +195,11 @@ h2{
 p{
     font-size: 1rem;
     text-align: center;
+    
+}
+.border-cont{
+   border: thin solid black; 
+   background-color: white;
 }
 .datos-user{
     width: 250px;
