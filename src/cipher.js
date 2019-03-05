@@ -16,11 +16,7 @@ window.cipher = {
         continue;
       }*/
      concat+=newletra;
-    
-      
-     
     }
-    
      return concat ;         
     
   },
@@ -36,9 +32,7 @@ window.cipher = {
       let positNew=(posicAlpha-offset)%26;
       
       const newletra=alfa[positNew];
-     
-      
-     
+  
      concat+=newletra; 
     
      

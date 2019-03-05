@@ -12,51 +12,6 @@ const face4=document.getElementById('face4');
     face3.style.display='none';
     face4.style.display='none';
 
-// EVENTOS 
-
-
-
-// envio de formulario
-// const formulario=document.querySelector('#formulario');
-// const send=document.getElementById('enviar');
-
-// let arrayformPaciente=[];
-
-
-
-// let crearFormularios=(offset,fecha,Name,Age,nameMedico,especialidad,
-//     descReceta1,cantidad1,indicacion1,
-//     descReceta2,cantidad2,indicacion2,
-//     descReceta3,cantidad3,indicacion3,
-//     descReceta4,cantidad4,indicacion4)=>{
-//     let itemFor={
-//         offset:offset,
-//         fecha:fecha ,
-//         Name:Name,
-//         Age:Age ,
-//         nameMedico:nameMedico ,
-//         especialidad:especialidad,
-//         descReceta1:descReceta1,
-//         cantidad1:cantidad1,
-//         indicacion1:indicacion1,
-//         descReceta2:descReceta2,
-//         cantidad2:cantidad2,
-//         indicacion2:indicacion2,
-//         descReceta3:descReceta3,
-//         cantidad3:cantidad3,
-//         indicacion3:indicacion3,
-//         descReceta4:descReceta4,
-//         cantidad4:cantidad4,
-//         indicacion4:indicacion4,
-
-//     }
-    
-
-//     arrayformPaciente.push(itemFor);
-//     return itemFor;
-// }
-// let ini=crearFormularios(3,15/14/15,'dely',12);
-//     console.log(ini);
 
 //FUNCIONES
 
