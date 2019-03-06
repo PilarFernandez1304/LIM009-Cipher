@@ -18,7 +18,7 @@ html{
 .conteiner-Welcome{
     width: 100%;
     height: 780px;
-    background-image: url(/img/medical.png);
+    background-image: url(http://pilarfernandez1304.github.io/LIM009-Cipher/src/img/medical.png);
     background-size: 100% 780px;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ html{
 .conteiner-logeo{
     width: 100%;
     height: 780px;
-    background-image: url(img/fondo1.png);
+    background-image: url(http://pilarfernandez1304.github.io/LIM009-Cipher/src/img/fondo1.png);
     background-size: 100% 780px;
     display: flex;
     justify-content: start;
