@@ -1,7 +1,7 @@
 window.cipher = {
   encode: (offset,descReceta) => {
     let upperCasedReceta = descReceta.toUpperCase();
-    
+    //let neword
     let concat='';
     let alfa='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for(let i=0 ; i<upperCasedReceta.length; i++){
@@ -10,40 +10,41 @@ window.cipher = {
       let posActual=(posicionAlpha+offset)%26;
       let newletra=alfa[posActual];    
 
-     /* if(letteriter ===' '){
-        neword+=letteriter;
+    //  if(letteriter ===' '){
+    //     neword+=letteriter;
         
-        continue;
-      }*/
-     concat+=newletra;
-    
+    //     continue;
+    //   }
       
-     
+     concat+=newletra;
+     //return neword;
     }
-    
      return concat ;         
     
   },
 
- decode: (offset,descReceta) => {
-    let textCifrado=descReceta.toUpperCase();
-    
+ decode: (offset2,text2) => {
+    let textCifrado=text2.toUpperCase();
+    //let neword
     let concat='';
     let alfa='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for (let i = 0; i < textCifrado.length; i++) {
       const textIter = textCifrado[i];
       let posicAlpha = alfa.indexOf(textIter);
-      let positNew=(posicAlpha-offset)%26;
-      
-      const newletra=alfa[positNew];
      
-      
-     
+      let positNew=(26% ((posicAlpha-offset2)*(-1)));
+     const newletra=alfa[positNew];
+
+      // if(textIter === -1){
+      //   neword+=textIter;
+        
+      //   continue;
+      // }
      concat+=newletra; 
-    
+    //return neword;
      
   }
-  
+
   return concat; 
   
   
