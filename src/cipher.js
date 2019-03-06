@@ -32,7 +32,7 @@ window.cipher = {
       const textIter = textCifrado[i];
       let posicAlpha = alfa.indexOf(textIter);
      
-      let positNew=(26% ((posicAlpha-offset2)*(-1)));
+      let positNew=(posicAlpha-offset2)%26;
      const newletra=alfa[positNew];
 
       // if(textIter === -1){
