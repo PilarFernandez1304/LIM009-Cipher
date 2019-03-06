@@ -140,7 +140,7 @@ const face4=document.getElementById('face4');
 
         const text2=document.getElementById('text2').value;
        const text4=document.getElementById('text4').value;
-       const offset2 =document.getElementById('offset').value;
+       const offset2 =document.getElementById('offset2').value;
        const obtenerDescifrado=cipher.decode(parseInt(offset2),text2) ;
        const obtenerDescifrado2=cipher.decode(parseInt(offset2),text4) ;
         const MostrarDescipher=document.getElementById('MostrarDescipher');
@@ -157,7 +157,7 @@ const face4=document.getElementById('face4');
 
     }
 
-    btn_clean=document.getElementById('clean');
+    const btn_clean=document.getElementById('clean');
     btn_clean.addEventListener('click',Limpiar);
 
     function Limpiar(){
@@ -176,7 +176,7 @@ const face4=document.getElementById('face4');
  
 
 
-   // cipher.decode(parseInt(),"efmzqjmbs");
+   cipher.decode(parseInt(33),"HIJKLMNOPQRSTUVWXYZABCDEFG");
 
 
 //const textReceta= descReceta.toUpperCase();
