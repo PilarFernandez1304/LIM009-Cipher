@@ -22,7 +22,6 @@ window.cipher = {
      return concat ;         
     
   },
-
  decode: (offset2,text2) => {
     let textCifrado=text2.toUpperCase();
     
