@@ -25,26 +25,31 @@ window.cipher = {
 
  decode: (offset2,text2) => {
     let textCifrado=text2.toUpperCase();
-    //let neword
+    
     let concat='';
     let alfa='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for (let i = 0; i < textCifrado.length; i++) {
       const textIter = textCifrado[i];
       let posicAlpha = alfa.indexOf(textIter);
-     
-      let positNew=(posicAlpha-offset2)%26;
+      let newOrd=posicAlpha-offset2;
+      let positNew=newOrd%26;
      const newletra=alfa[positNew];
+      
+      if(newOrd < 0){
 
-      // if(textIter === -1){
-      //   neword+=textIter;
+        let neword=(26+(newOrd))%26;
+        let newle=alfa[neword];
+        concat+=newle;
         
-      //   continue;
-      // }
+        continue;
+      }
+    else
+      
      concat+=newletra; 
+    
     //return neword;
      
   }
-
   return concat; 
   
   

@@ -173,10 +173,4 @@ const face4=document.getElementById('face4');
         face1.style.display='block';
     }
 
- 
-
-
-   cipher.decode(parseInt(33),"HIJKLMNOPQRSTUVWXYZABCDEFG");
-
-
 //const textReceta= descReceta.toUpperCase();
